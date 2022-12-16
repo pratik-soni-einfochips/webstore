@@ -1,0 +1,61 @@
+::ng-deep {
+    .mat-dialog-container {
+        background-color: var(--model-bg-color);
+        border: 3px solid var(--color-primary);
+        border-radius: 10px;
+        padding: 10px 24px 20px 10px;
+    }
+}
+
+.product-information {
+    color: var(--color-primary);
+
+    .title {
+        border-bottom: 2px solid var(--color-primary);
+
+        h2 {
+            margin: unset !important;
+        }
+    }
+
+    .dialog-content {
+        margin-top: 10px;
+
+        .product_image {
+            img {
+                height: 100%;
+                width: 100%;
+                max-height: 400px;
+                max-width: 350px
+            }
+        }
+
+        .prod_info {
+            div{
+                min-height: 50px;
+                font-weight: 550;
+            }
+            .productTitle {
+                font-size: 25px;
+            }
+            .prodPrice {
+                font-size: 35px;
+                font-style: italic;
+            }
+            .prodDesc{
+                font-size: 15px;
+            }
+            .availableStock{
+                margin-top: 10px;
+                font-size: 15px;  
+            }
+            .addToCart{
+                button{
+                    border: 1px solid var(--color-primary);
+                    background-color: var(--color-primary);
+                    color: var(--active-font-color);
+                }
+            }
+        }
+    }
+}

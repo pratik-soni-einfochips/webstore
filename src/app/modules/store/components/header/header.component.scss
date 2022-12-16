@@ -1,0 +1,33 @@
+.tabs-to-dropdown .nav-wrapper {
+    padding: 5px 10px;
+    border-bottom: 3px solid var(--color-primary);
+    background-color: var(--color-background);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.12);
+}
+.brandName{
+    font-family: sans-serif !important;
+    text-align: center !important;
+    font-size: 25px !important;
+    font-weight: bolder !important;
+    color: var(--color-primary);
+    text-decoration: none;
+}
+.tabs-to-dropdown .nav-wrapper a {
+    color: var(--color-primary);
+    font-weight: 550;
+    font-size: 16px;
+    &.active {
+        //color: var(--active-font-color);
+        background-color: unset;
+    }
+}
+.badge{
+    background-color: var(--color-primary);
+    position: relative;
+    font-size: 10px;
+    top: -20px;
+}
+.cartIcon{
+    font-size: 32px;
+    color: var(--color-primary);
+}

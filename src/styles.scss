@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+:root{
+    --color-background: rgb(179, 193, 192);
+    --color-primary : #005361;
+    --product-bgcolor : rgb(238, 243, 242);
+    --active-font-color: white;
+    --font-color: black;
+    --model-bg-color: rgb(238, 243, 242);
+}
+
+*::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  *::-webkit-scrollbar-track {
+    background: var(--color-background);
+    border: 1px solid var(--color-primary);
+    border-radius: 20px;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--color-primary);
+    border-radius: 20px;
+    border: 0;
+    min-height: 100px;
+  }
+html, body { height: 100%; background-color: var(--color-background) !important }
+body { 
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.snack_bar{
+    background-color: var(--color-primary) !important;
+    color:white !important;
+    font-weight: 400;
+}
+

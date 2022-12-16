@@ -1,0 +1,114 @@
+.products {
+    background-color: var(--color-background);
+    height: calc(100vh - 55px);
+    overflow: auto;
+
+    .filters {
+        margin: 5px;
+        .filterLabel {
+            font-size: 15px;
+            font-weight: 500;
+            color: var(--color-primary);
+        }
+
+        .search {
+            margin: 2px 0px;
+            padding: 0px 10px;
+
+            input {
+                background-color: var(--color-background);
+                border: unset;
+                font-size: 15px;
+                border-bottom: 2px solid var(--color-primary);
+                width: -webkit-fill-available;
+                padding: 5px;
+
+                &:focus-visible {
+                    background-color: var(--color-background);
+                    border: unset;
+                    font-size: 15px;
+                    border-bottom: 2px solid var(--color-primary);
+                    width: -webkit-fill-available;
+                    padding: 5px;
+                }
+            }
+        }
+
+        .Select {
+            text-align: center;
+            font-size: 15px;
+            background-color: var(--product-bgcolor);
+            padding: 5px;
+            border-radius: 5px;
+            border: 2px solid var(--color-primary);
+        }
+    }
+
+    .product-list {
+        padding: 2px 15px 2px 20px;
+
+        .col-md-3 {
+            width: 24% !important;
+        }
+
+        .product {
+            height: 250px;
+            width: 24%;
+            color: var(--font-color);
+            border: 1.5px solid var(--color-primary);
+            background-color: var(--product-bgcolor);
+            margin: 5px;
+            border-radius: 10px;
+
+            .label {
+                font-weight: 750;
+            }
+
+            .product-title {
+                font-size: 16px;
+            }
+
+            .product-desc {
+                font-size: 12px;
+            }
+
+            .productValue {
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+
+            .product-detail {
+                margin-top: 3px;
+                margin-bottom: 7px;
+            }
+
+            .product-img {
+                text-align: center;
+
+                img {
+                    height: 110px;
+                    width: 270px;
+                }
+            }
+
+            .product-price {
+                font-size: 16px;
+            }
+
+            .action {
+                border-radius: 8px;
+                min-height: 46px;
+                text-align: center;
+                background-color: var(--color-primary);
+                color: var(--active-font-color);
+
+                span {
+                    font-size: 20px;
+                    margin-top: 15px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

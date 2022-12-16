@@ -1,0 +1,40 @@
+<div class="products">
+    <div class="filters">
+        <div class="row filter">
+            <div class="col-md-6 search"></div>
+            <div class="col-md-3 search">
+                <input type="text" class="" placeholder=" Search Product..." [ngModel]="searchData" (ngModelChange)="searchDataChange($event)"/>
+            </div>
+            <div class="col-md-3">
+                <span class="filterLabel"> Filter : </span>
+                <select [ngModel]="selectedFilter" (ngModelChange)="onFilterChange($event)" class="Select">
+                    <option [value]="filter.value" *ngFor="let filter of filterOptions">{{filter.label}}</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="product-list">
+        <div class="row">
+            <div *ngFor="let product of products" class="product">
+                <div class="row product-detail product-title">
+                    <div class="label col-md-4"> Name : </div>
+                    <div class="productValue col-md-8">{{product.title}}</div>
+                </div>
+                <div class="row product-detail product-desc">
+                    <div class="label col-md-4"> Description : </div>
+                    <div class="productValue col-md-8">{{product.description}}</div>
+                </div>
+                <div class="product-detail product-img">
+                    <img [src]="product.thumbnail" onerror="this.onerror=null;this.src='assets/images/not_available.png'"/>
+                </div>
+                <div class="product-detail row product-price">
+                    <div class="col-md-4 label">Price : </div>
+                    <div class="col-md-8 label">{{product.price | productcurrency: product.currency}}</div>
+                </div>
+                <div class="row action" (click)="openProductDetail(product)">
+                    <span class="fa fa-eye">&nbsp;View</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+<div class="product-information">
+    <div class="title">
+        <h2 mat-dialog-title>Product Information</h2>
+    </div>
+    <div class="row dialog-content">
+        <div class="col-md-6 product_image">
+            <img [src]="productInfo.thumbnail" onerror="this.onerror=null;this.src='assets/images/not_available.png'"/>
+        </div>
+        <div class="row col-md-6 prod_info">
+            <div class="productTitle">{{productInfo.title}}</div>
+            <div class="prodPrice">Price : ${{productInfo.price}}</div>
+            <div class="prodDesc">{{productInfo.description}}</div>
+            <div class="availableStock">Available Quantity : {{productInfo.stock}}</div>
+            <div class="addToCartQty">
+                <input type="number" value="1"/>
+            </div>
+            <div class="addToCart">
+                <button class="btn" (click)="addToCart()">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <!-- <mat-dialog-actions align="end">
+        <button mat-button mat-dialog-close>Cancel</button>
+        <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Install</button>
+    </mat-dialog-actions> -->
+</div>

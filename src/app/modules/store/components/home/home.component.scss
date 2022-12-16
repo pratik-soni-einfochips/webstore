@@ -1,0 +1,26 @@
+.home{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: var(--color-background);
+    .categories{
+        padding: 15px 10px 30px 30px;
+    }
+    .category{
+        background-color: var(--product-bgcolor);
+        min-height: 100px;
+        border: 2px solid var(--color-primary);
+        text-align: center;
+        border-radius: 10px;
+        line-height: 100px;
+        vertical-align: middle;
+        font-weight: 500;
+        color: var(--font-color);
+        margin: 8px;
+        text-transform: capitalize;
+        &.col-md-2{
+            width: 15% !important;
+        }
+        cursor: pointer;
+    }
+}

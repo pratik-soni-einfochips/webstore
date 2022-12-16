@@ -1,0 +1,31 @@
+:host {
+    display: flex;
+    justify-content: center;
+    margin: 150px 0px;
+}
+.mat-form-field {
+    width: 100%;
+    min-width: 200px;
+    margin: 10px 0px;
+}
+
+mat-card{
+    border: 2px solid var(--color-primary);
+    border-radius: 20px;
+    background-color: var(--product-bgcolor);
+}
+mat-card-title,
+mat-card-content {
+    display: flex;
+    justify-content: center;
+}
+
+.loginDiv{
+    margin-top: 10px;
+    text-align: end;
+    button{
+        padding: 10px 40px;
+        background-color: var(--color-primary) !important;
+        color: var(--active-font-color);
+    }
+}
